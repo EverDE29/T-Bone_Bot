@@ -44,9 +44,9 @@ public class Main {
                 System.out.println("4. To interrupt the execution of a program");
 
                 int response = scanner.nextInt();
-                for (; response != 2; response++) {
+                while (response != 2) {
                     System.out.println("Please, try again.");
-                    int retry = scanner.nextInt();
+                    response = scanner.nextInt();
                 }
 
                 System.out.println("Congratulations, have a nice day");
